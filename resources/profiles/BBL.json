@@ -1604,6 +1604,18 @@
         {
             "name": "PolyLite ASA @BBL X1E 0.2 nozzle",
             "sub_path": "filament/PolyLite ASA @BBL X1E 0.2 nozzle.json"
+        },
+        {
+            "name": "Ender PLA @base",
+            "sub_path": "filament/Ender PLA @base.json"
+        },
+        {
+            "name": "Ender PLA @BBL X1C",
+            "sub_path": "filament/Ender PLA X1C.json"
+        },
+        {
+            "name": "Ender PLA @BBL X1C 0.2 nozzle",
+            "sub_path": "filament/Ender PLA X1C 0.2 nozzle.json"
         }
     ],
     "machine_list": [

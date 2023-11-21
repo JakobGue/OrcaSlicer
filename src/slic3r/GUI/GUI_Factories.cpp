@@ -486,7 +486,7 @@ wxMenu* MenuFactory::append_submenu_add_generic(wxMenu* menu, ModelVolumeType ty
     }
 
     for (auto &item : {L("Orca Cube"), L("3DBenchy"), L("Autodesk FDM Test"),
-                       L("Voron Cube")}) {
+                       L("Voron Cube"), "FilamentSample", "Loop"}) {
         append_menu_item(
             sub_menu, wxID_ANY, _(item), "",
             [type, item](wxCommandEvent &) {
@@ -500,6 +500,11 @@ wxMenu* MenuFactory::append_submenu_add_generic(wxMenu* menu, ModelVolumeType ty
                 file_name = "ksr_fdmtest_v4.stl";
               else if (file_name == L("Voron Cube"))
                 file_name = "Voron_Design_Cube_v7.stl";
+              else if (file_name == "FilamentSample")
+                file_name = "FilamentSample.STL";
+              else if (file_name == L("Loop"))
+                file_name = "Öse.stl";
+
               else
                 return;
               input_files.push_back(
